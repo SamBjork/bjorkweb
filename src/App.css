@@ -1,296 +1,59 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Courier New", Courier, monospace;
-}
-:root {
-  background-color: rgba(231, 230, 230, 0.74);
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 2px #272727af;
-}
-
-h2 {
-  color: black;
+/* .App {
   text-align: center;
-  font-size: 35px;
-  text-shadow: 1px 1px #272727af;
-  
+} */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.title {
-  font-size: 130px;
-
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.sub-title {
-  font-size: 30px;
-  margin: 50px;
-}
-
-.text-field {
-  text-align: center;
-}
-
-.customers,
-.products,
-.contact,
-.projects,
-.primaryproject,
-.primaryproduct {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 2px #272727af;
-}
-
-.home {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
-
-.customers {
-  background-image: url("/images/stadsmus.jpg");
-  background-position: fill;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-.products {
-  background-image: url("/images/fiskekyrka.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-.contact {
-  background-image: url("/images/spv.jpg");
-  background-position: 0;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  color: #fff;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-.projects {
-  background-image: url("/images/ramberget.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  color: #fff;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-.primaryproject {
-  background-image: url("/images/fiskeby3.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  color: #fff;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-.primaryproduct {
-  background-image: url("/images/advancedplc.jpg");
-  background-position: 0;
-  background-size: cover;
-  height: 600px;
-  background-repeat: no-repeat;
-  color: #fff;
-  border-bottom-left-radius: 600px;
-  border-bottom-right-radius: 600px;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1d1d1d;
-}
-
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(
-    rgb(54, 49, 49) 20%,
-    rgb(252, 222, 124) 120%
-  );
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(black, rgb(189, 167, 119));
-}
-
-/* //////////////---------------------------Home Page & (hero)------------------------------/ */
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-}
-
-.hero-container {
-  height: 93vh;
-  width: 100%;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.hero-container > h1 {
-  color: #fff;
-  font-size: 100px;
-  margin-top: -100px;
+.App-link {
+  color: #61dafb;
 }
 
-.hero-container > p {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 32px;
-  font-family: 'Courier New', Courier, monospace
-
-}
-
-.hero-btns {
-  margin-top: 32px;
-}
-
-.hero-btns .btn {
-  margin: 6px;
-}
-
-.fa-play-circle {
-  margin-left: 4px;
-}
-
-@media screen and (max-width: 960px) {
-  .contact {
-    background-position: right;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
+  to {
+    transform: rotate(360deg);
   }
 }
-
-@media screen and (max-width: 768px) {
-  .title {
-    font-size: 70px;
-  }
-
-  .hero-container > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-  }
-
-  .hero-container > p {
-    font-size: 30px;
-  }
-
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
-  }
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-@media screen and (max-width: 600px) {
-  .customers,
-  .products,
-  .contact,
-  .projects {
-    display: flex;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 2px #272727af;
-  }
-
-  .sub-title {
-    font-size: 28px;
-    margin: 50px;
-  }
+.container-box {
+  width: 80%;
+  background-color: transparent;
+  position: relative;
+  z-index: 9;
 }
 
-/* /////CONTACT////// */
-
-.contact-info {
-  text-align: center;
-  margin: 2rem;
-}
-
-.info-list {
-  margin: 55px;
-  list-style: none;
-}
-
-.info-list li {
-  margin-bottom: 15px;
-}
-
-.info-list-item {
-  margin: 10px;
-}
-
-.info-list-item-text {
-  color: #202020;
-  text-shadow: #2a2929;
-}
-
-/* /////CUSTOMERS////// */
-
-.customer-info {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.customer-sub {
-  color: #15160be5;
-}
-
-.customer-info-list {
-  margin: 10px;
-  list-style: none;
-}
-
-.customer-info-list-item {
-  margin: 20px;
-}
-.customer-info-list-item-text {
-  font-size: 25px;
-}
-
-/*////////////////////////MISC////////////////////////*/
-.margin-text {
-  margin: 100px;
+.particles-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
